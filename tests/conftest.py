@@ -13,7 +13,8 @@ def pytest_addoption(parser):
 def setup_and_teardown(request):
     wdf = WebDriverFactory()
     browser = get_browser(request).lower()
-    driver = wdf.get_driver(browser)
+    target = get_target(request).lower()
+    driver = wdf.get_driver(browser, target)
 
     if request.cls is not None:
         request.cls.driver = driver
