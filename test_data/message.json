@@ -1,0 +1,14 @@
+{
+  "login": {
+    "error_login": "There was a problem with your login and/or errors exist in your form.",
+    "error_login_manytime": "You have used 4 out of 5 login attempts. After all 5 have been used, you will be unable to login for 15 minutes.",
+    "error_mail_pwd": "Invalid username or password. Please try again",
+    "error_login_mail_noactive": "Invalid username or password. Please try again."
+  },
+  "register": {
+    "mail_already_in_use":"This email address is already in use.",
+    "error_password": "Invalid password length.",
+    "error_pid": "Invalid ID length.",
+    "error_form": "There're errors in the form. Please correct the errors and try again."
+  }
+}
