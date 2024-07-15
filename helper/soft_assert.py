@@ -9,3 +9,4 @@ class SoftAssert:
     def assert_all(self):
         if self.errors:
             raise AssertionError('\n'.join(self.errors))
+            fail

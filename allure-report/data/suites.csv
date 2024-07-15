@@ -1,0 +1,24 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jul 15 14:30:37 ICT 2024","Mon Jul 15 14:30:43 ICT 2024","5066","tests","test_logout","TestLogout","","","test_logout",""
+"passed","Mon Jul 15 14:08:32 ICT 2024","Mon Jul 15 14:08:37 ICT 2024","4521","tests","test_parallel","TestLogout","","","test_logout_chrome[chrome]",""
+"broken","Mon Jul 15 14:15:45 ICT 2024","Mon Jul 15 14:15:45 ICT 2024","0","tests","test_login","TestLogin","","","test_login_blank_mail","
+        User cannot login with blank ""Username"" textbox.
+        :return:
+        "
+"broken","Mon Jul 15 14:15:45 ICT 2024","Mon Jul 15 14:15:45 ICT 2024","0","tests","test_login","TestLogin","","","test_login_valid_user","
+        User can log into Railway with valid username and password.
+        :return:
+        "
+"broken","Mon Jul 15 14:15:45 ICT 2024","Mon Jul 15 14:15:45 ICT 2024","0","tests","test_login","TestLogin","","","test_login_invalid_pwd","
+        User cannot log into Railway with invalid password.
+        :return:
+        "
+"passed","Mon Jul 15 14:08:44 ICT 2024","Mon Jul 15 14:08:50 ICT 2024","5199","tests","test_parallel","TestLogout","","","test_logout_firefox[firefox]",""
+"broken","Mon Jul 15 14:15:45 ICT 2024","Mon Jul 15 14:15:45 ICT 2024","0","tests","test_login","TestLogin","","","test_login_wrong_pws_manytime","
+        System shows message when user enters wrong password many times.
+        :return:
+        "
+"broken","Mon Jul 15 14:15:45 ICT 2024","Mon Jul 15 14:15:45 ICT 2024","0","tests","test_login","TestLogin","","","test_acc_inactive","
+        User can't login with an account hasn't been activated.
+        :return:
+        "

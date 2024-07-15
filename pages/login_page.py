@@ -25,4 +25,4 @@ class LoginPage(BasePage):
         for i in range(times):
             self.select_tab(TabName.LOGIN.value)
             self.login(user)
-            sort_assert.check(self.verify_error_mes(expected_resutl), f"Time {i + 1}: Message doesn't display like expect.")
+            sort_assert.check(self.is_display_error_mes(expected_resutl), f"Time {i + 1}: Message doesn't display like expect.")

@@ -28,3 +28,6 @@ class WebDriverFactory:
                 options=options)
             BasePage(driver).open_railway()
             return driver
+
+    def get_screenshot_as_png(self):
+        return self.driver.get_screenshot_as_png()
