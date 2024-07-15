@@ -4,8 +4,13 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from base.base_page import BasePage
+from pages.login_page import LoginPage
+from pages.mail_page import MailPage
+from pages.register_page import RegisterPage
+
 
 class WebDriverFactory:
+
     def get_driver(self, browser, target):
         if target == "local":
             if browser == "chrome":
@@ -27,6 +32,7 @@ class WebDriverFactory:
                 command_executor="http://localhost:4444/wd/hub",
                 options=options)
             BasePage(driver).open_railway()
+            self.classSetup(self)
             return driver
 
     def get_screenshot_as_png(self):

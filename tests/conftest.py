@@ -10,7 +10,7 @@ def pytest_addoption(parser):
         "--target", action="store", default="local", help="my option: local or remote"
     )
 
-@pytest.fixture(scope="class")
+@pytest.fixture()
 def setup_and_teardown(request):
     wdf = WebDriverFactory()
     browser = get_browser(request)

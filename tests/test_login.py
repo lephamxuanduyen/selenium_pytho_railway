@@ -11,13 +11,10 @@ from pages.register_page import RegisterPage
 @pytest.mark.usefixtures("setup_and_teardown")
 class TestLogin:
 
-    @pytest.fixture(autouse=True)
-    def classSetup(self):
+    def test_login_valid_user(self):
         self.login_page = LoginPage(self.driver)
         self.mail_page = MailPage(self.driver)
         self.register_page = RegisterPage(self.driver)
-
-    def test_login_valid_user(self):
         '''
         User can log into Railway with valid username and password.
         :return:
@@ -28,6 +25,9 @@ class TestLogin:
         assert self.login_page.is_display_welcome_mes()!=None, "Welcome Message doesn't display."
 
     def test_login_blank_mail(self):
+        self.login_page = LoginPage(self.driver)
+        self.mail_page = MailPage(self.driver)
+        self.register_page = RegisterPage(self.driver)
         '''
         User cannot login with blank "Username" textbox.
         :return:
@@ -38,6 +38,7 @@ class TestLogin:
         assert self.login_page.is_display_error_mes(get_message("login","error_login"))
 
     def test_login_invalid_pwd(self):
+        self.login_page = LoginPage(self.driver)
         '''
         User cannot log into Railway with invalid password.
         :return:
@@ -48,6 +49,7 @@ class TestLogin:
         assert self.login_page.is_display_error_mes(get_message("login","error_login")), "Message doesn't display like expected"
 
     def test_login_wrong_pws_manytime(self):
+        self.login_page = LoginPage(self.driver)
         '''
         System shows message when user enters wrong password many times.
         :return:
@@ -59,6 +61,9 @@ class TestLogin:
         soft_assert.assert_all()
 
     def test_acc_inactive(self):
+        self.login_page = LoginPage(self.driver)
+        self.mail_page = MailPage(self.driver)
+        self.register_page = RegisterPage(self.driver)
         '''
         User can't login with an account hasn't been activated.
         :return:
