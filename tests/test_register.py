@@ -10,12 +10,9 @@ from helper.soft_assert import SoftAssert
 @pytest.mark.usefixtures("setup_and_teardown")
 class TestRegister:
 
-    @pytest.fixture(autouse=True)
-    def classSetup(self):
+    def test_register_active_acc(self):
         self.register_page = RegisterPage(self.driver)
         self.mail_page = MailPage(self.driver)
-
-    def test_register_active_acc(self):
         '''
         User can't create account with an already in-use email
         :return:
@@ -45,6 +42,8 @@ class TestRegister:
         assert actual_result == expected_result
 
     def test_register_empty_pwd_pid(self):
+        self.register_page = RegisterPage(self.driver)
+        self.mail_page = MailPage(self.driver)
         '''
         User can't create account while password and PID fields are empty
         :return:
