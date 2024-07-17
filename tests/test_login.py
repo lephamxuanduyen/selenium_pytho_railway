@@ -1,3 +1,5 @@
+import unittest
+
 import pytest
 from pages.login_page import LoginPage
 from pages.mail_page import MailPage
@@ -9,7 +11,7 @@ from config.config import read_config
 from pages.register_page import RegisterPage
 
 @pytest.mark.usefixtures("setup_and_teardown")
-class TestLogin:
+class TestLogin(unittest.TestCase):
 
     def test_login_valid_user(self):
         self.login_page = LoginPage(self.driver)

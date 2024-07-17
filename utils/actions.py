@@ -25,7 +25,10 @@ class Action:
     def select(self, xpath, value):
         self.scroll(xpath)
         select = Select(self.driver.find_element(By.XPATH, xpath))
-        select.selectByVisibleText(value)
+        select.select_by_visible_text(value)
 
     def is_select(self, xpath):
         return self.driver.find_element(By.XPATH, xpath).is_selected()
+
+    def find_many_elements(self, xpath):
+        return self.driver.find_elements(By.XPATH, xpath)

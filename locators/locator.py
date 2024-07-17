@@ -34,3 +34,20 @@ class Register:
     message_invalid_pwd = "//form//label[preceding-sibling::input[@id='password']]"
     message_invalid_pid = "//form//label[preceding-sibling::input[@id='pid']]"
     message_register_succ = "//div[@id='content']/p"
+
+class BookTicket:
+    txb = "//select[@name='%s']"
+    submit_form_btn = "//input[@type='submit']"
+    info_book_ticket_succ = "//table//td[count(//th[text()='%s']/preceding-sibling::th) + 1]"
+    message = "//div[@id='content']/h1"
+    mes_book_ticket_succ = "//div[@id='content']/h1"
+    total = "//td[count(//tr//th[text()='Total Price']/preceding-sibling::th)+1]"
+
+class MyTicket:
+    cancel_btn = "//input[contains(@onclick, 'Delete')]"
+    total = "//table[@class='MyTable']//tr[td[text()='%s' and following-sibling::td[text()='%s' and following-sibling::td[text()='%s' and following-sibling::td[text()='%s' and following-sibling::td[text()='%s']]]]]]//td[count(//tr/th[text()='Total Price']/preceding-sibling::th)+1]"
+    filter_depart_station = "//select[@name='FilterDpStation']"
+    filter_date = "//input[@name='FilterDpDate']"
+    filter_apply_btn = "//input[@type='submit' and @value='Apply filter']"
+    departs = "//table[@class='MyTable']//td[count(//table[@class='MyTable']//tr/th[text()='Depart Station']/preceding-sibling::th) + 1]"
+    date = "//table[@class='MyTable']//td[count(//table[@class='MyTable']//tr/th[text()='Depart Date']/preceding-sibling::th) + 1]"

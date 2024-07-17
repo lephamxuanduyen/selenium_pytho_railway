@@ -16,3 +16,17 @@ class MailPage(BasePage):
         self.refresh()
         self.wait_element_to_visibility(MailPageLocator.email_confirm % mail_confirm_instruction, 30).click()
         self.wait_element_to_visibility(MailPageLocator.link_confirm, 5).click()
+
+    # deleteMail(String
+    # mailConfirm) {
+    #     switchToMailPage();
+    # DriverManagement.driver.get().navigate().refresh();
+    # Action.click(linkBackToInbox);
+    # Action.click(By.xpath(String.format(cbxMailConfirm, mailConfirm)));
+    # Action.click(deleteMailBtn);
+    # }
+    def clean_mail(self, mail_confirm_instruction):
+        self.refresh()
+        Action(self.driver).click(MailPageLocator.link_back_to_inbox)
+        Action(self.driver).click(MailPageLocator.cbx_mail_confirm % mail_confirm_instruction)
+        Action(self.driver).click(MailPageLocator.delete_mail_btn)

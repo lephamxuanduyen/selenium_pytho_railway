@@ -4,9 +4,6 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from base.base_page import BasePage
-from pages.login_page import LoginPage
-from pages.mail_page import MailPage
-from pages.register_page import RegisterPage
 
 
 class WebDriverFactory:

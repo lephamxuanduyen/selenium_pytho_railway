@@ -1,0 +1,53 @@
+{
+  "ticketSameStation": [
+    {
+      "DepartDate": "8/1/2024",
+      "DepartStaion": "Sài Gòn",
+      "ArriveStation": "Phan Thiết",
+      "SeatType": "Soft seat",
+      "TicketAmount": "1"
+    },
+    {
+      "DepartDate": "8/2/2024",
+      "DepartStaion": "Sài Gòn",
+      "ArriveStation": "Phan Thiết",
+      "SeatType": "Soft seat",
+      "TicketAmount": "1"
+    },
+    {
+      "DepartDate": "8/3/2024",
+      "DepartStaion": "Sài Gòn",
+      "ArriveStation": "Phan Thiết",
+      "SeatType": "Soft seat",
+      "TicketAmount": "1"
+    },
+    {
+      "DepartDate": "8/4/2024",
+      "DepartStaion": "Sài Gòn",
+      "ArriveStation": "Phan Thiết",
+      "SeatType": "Soft seat",
+      "TicketAmount": "1"
+    },
+    {
+      "DepartDate": "8/5/2024",
+      "DepartStaion": "Sài Gòn",
+      "ArriveStation": "Phan Thiết",
+      "SeatType": "Soft seat",
+      "TicketAmount": "1"
+    },
+    {
+      "DepartDate": "8/6/2024",
+      "DepartStaion": "Sài Gòn",
+      "ArriveStation": "Phan Thiết",
+      "SeatType": "Soft seat",
+      "TicketAmount": "1"
+    },
+    {
+      "DepartDate": "8/7/2024",
+      "DepartStaion": "Sài Gòn",
+      "ArriveStation": "Phan Thiết",
+      "SeatType": "Soft seat",
+      "TicketAmount": "1"
+    }
+  ]
+}
